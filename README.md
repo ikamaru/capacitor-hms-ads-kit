@@ -11,9 +11,55 @@ npx cap sync
 
 ## API
 
-<docgen-index></docgen-index>
+<docgen-index>
+
+* [`showBanner(...)`](#showbanner)
+* [`hideBanner()`](#hidebanner)
+* [`showInterstitial(...)`](#showinterstitial)
+
+</docgen-index>
 
 <docgen-api>
-<!-- run docgen to generate docs from the source -->
-<!-- More info: https://github.com/ionic-team/capacitor-docgen -->
+<!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
+
+### showBanner(...)
+
+```typescript
+showBanner(options: { bannerId: string; settings: { postion: "top" | "bottom"; }; }) => any
+```
+
+| Param         | Type                                                                          |
+| ------------- | ----------------------------------------------------------------------------- |
+| **`options`** | <code>{ bannerId: string; settings: { postion: "top" \| "bottom"; }; }</code> |
+
+**Returns:** <code>any</code>
+
+--------------------
+
+
+### hideBanner()
+
+```typescript
+hideBanner() => any
+```
+
+**Returns:** <code>any</code>
+
+--------------------
+
+
+### showInterstitial(...)
+
+```typescript
+showInterstitial(options: { interstitialId: string; }) => any
+```
+
+| Param         | Type                                     |
+| ------------- | ---------------------------------------- |
+| **`options`** | <code>{ interstitialId: string; }</code> |
+
+**Returns:** <code>any</code>
+
+--------------------
+
 </docgen-api>

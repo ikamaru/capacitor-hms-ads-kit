@@ -3,8 +3,14 @@ import { WebPlugin } from '@capacitor/core';
 import type { AdsKitPlugin } from './definitions';
 
 export class AdsKitWeb extends WebPlugin implements AdsKitPlugin {
-  async echo(options: { value: string }): Promise<{ value: string }> {
-    console.log('ECHO', options);
-    return options;
+  showBanner(_options: { bannerId: string }): Promise<void> {
+    throw new Error('Method not implemented.');
   }
+  hideBanner(): Promise<void> {
+    throw new Error('Method not implemented.');
+  }
+  showInterstitial(_options: { interstitialId: string; }): Promise<void> {
+    throw new Error('Method not implemented.');
+  }
+  
 }
